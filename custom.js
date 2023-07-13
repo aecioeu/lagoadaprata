@@ -8,9 +8,26 @@ $(document).ready(function () {
             name:'Termos de Fomento, Colaboração e Acordo de Cooperação',
             url:'portal/editais/1/5/0/0/0/54/0/0/0/'
         },{
+            name:'Editais de Chamamento',
+            url: 'portal/editais/1/5/0/0/0/50/0/0/0'
+        },
+        {
             name:'Editais de Credenciamento',
             url: 'portal/editais/1/5/0/0/0/52/0/0/0'
-        }
+        },
+        {
+            name:'Justificativa de Ausência Chamamento',
+            url: 'portal/editais/1/5/0/0/0/51/0/0/0'
+        },
+        {
+            name:'Questionamentos / Reprovação de Contas',
+            url: 'portal/editais/1/5/0/0/0/55/0/0/0'
+        },
+        {
+            name:'Resoluções',
+            url: 'portal/editais/1/5/0/0/0/56/0/0/0'
+        },
+
     ]
         
 
