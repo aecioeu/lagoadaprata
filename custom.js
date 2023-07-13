@@ -32,9 +32,7 @@ $(document).ready(function () {
         
 
         urls.forEach(function(key) {
-           console.log(key)
-
-           if (window.location.href.indexOf(key.url) > -1) {
+            if (window.location.href.indexOf(key.url) > -1) {
             
             $('.ed_area_busca').remove()
             $('.sw_titulo_pagina').html(key.name)
