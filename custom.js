@@ -1,7 +1,6 @@
 
 
 $(document).ready(function () {
-
     //urls em que sera supimida a busca
     var urls = [
         'portal/editais/1/5/0/0/0/51/0/0/0/',
@@ -10,7 +9,6 @@ $(document).ready(function () {
 
        $('.ed_area_busca').remove()
     }
-
 
 
 });
