@@ -30,10 +30,11 @@ $(document).ready(function () {
 
     ]
         
-
         urls.forEach(function(key) {
-            if (window.location.href.indexOf(key.url) > -1) {
             
+
+            
+            if (window.location.href.indexOf(key.url) > -1) {          
             $('.ed_area_busca').remove()
             $('.sw_titulo_pagina').html(key.name)
             $('.sw_area_links_navegacao').html(`
@@ -41,6 +42,22 @@ $(document).ready(function () {
             <a href="https://lagoadaprata.mg.gov.br/parcerias"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">MROSC - Parcerias</span></div></a>
             <a href="${window.location.href}"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">${key.name}</span></div></a>`)
          }
+
+         if (document.referrer.indexOf(key.url) > -1) {   
+            
+            var ItenName = $('.sw_area_links_navegacao a').eq(3).text()
+
+            $('.ed_area_busca').remove()
+            $('.sw_titulo_pagina').html(key.name)
+            $('.sw_area_links_navegacao').html(`
+            <a href="/"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">Principal</span></div></a>
+            <a href="https://lagoadaprata.mg.gov.br/parcerias"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">MROSC - Parcerias</span></div></a>
+            <a href="${document.referrer}"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">${key.name}</span></div></a>
+            <a href="${window.location.href}"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">${ItenName}</span></div></a>`)
+       
+        }
+
+         
 
 
         });
