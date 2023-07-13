@@ -7,6 +7,9 @@ $(document).ready(function () {
         },{
             name:'Termos de Fomento, Colaboração e Acordo de Cooperação',
             url:'portal/editais/1/5/0/0/0/54/0/0/0/'
+        },{
+            name:'Editais de Credenciamento',
+            url: 'portal/editais/1/5/0/0/0/52/0/0/0'
         }
     ]
         
