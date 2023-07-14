@@ -31,10 +31,8 @@ $(document).ready(function () {
     ]
         
         urls.forEach(function(key) {
-            
-
-            
-            if (window.location.href.indexOf(key.url) > -1) {          
+                
+        if (window.location.href.indexOf(key.url) > -1) {          
             $('.ed_area_busca').remove()
             $('.sw_titulo_pagina').html(key.name)
             $('.sw_area_links_navegacao').html(`
@@ -43,7 +41,10 @@ $(document).ready(function () {
             <a href="${window.location.href}"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">${key.name}</span></div></a>`)
          }
 
-         if (document.referrer.indexOf(key.url) > -1) {   
+console.log(document.referrer.indexOf(key.url) > -1 && urls.includes({name : key.url}))
+ 
+
+         if (document.referrer.indexOf(key.url) > -1 && urls.includes({name : key.url})) {   
             
             var ItenName = $('.sw_area_links_navegacao a').eq(3).text()
 
@@ -57,10 +58,7 @@ $(document).ready(function () {
        
         }
 
-         
-
-
-        });
+});
 
 
 
