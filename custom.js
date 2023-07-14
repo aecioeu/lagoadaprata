@@ -41,8 +41,6 @@ $(document).ready(function () {
             <a href="${window.location.href}"><div class="sw_navegacao"><i class="swfa fas fa-home" aria-hidden="true"></i><span class="sw_lato">${key.name}</span></div></a>`)
          }
 
-console.log(document.referrer.indexOf(key.url) > -1 && urls.includes({name : key.url}))
- 
 
          if (document.referrer.indexOf(key.url) > -1 && urls.includes({name : key.url})) {   
             
