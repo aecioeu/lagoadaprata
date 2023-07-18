@@ -58,6 +58,20 @@ $(document).ready(function () {
 
 });
 
+if($('.sw_titulo_listagem').length > 0){
+
+    $('.sw_titulo_listagem').each(function() {
+        var endereco = $(this).find('.sw_txt_tooltip').attr('title')
+        var title = $(this).text()
+        
+       $(this).html(`
+       ${title} 
+       <p style="font-size: 13px;font-weight: 700;">${endereco}</p>`)
+      });
+
+}
+
+
 
 
 
