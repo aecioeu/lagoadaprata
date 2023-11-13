@@ -58,6 +58,7 @@ $(document).ready(function () {
 
 });
 
+
 if($('.sw_titulo_listagem').length > 0){
 
     $('.sw_titulo_listagem').each(function() {
@@ -86,7 +87,7 @@ var urls = [{
 
 urls.forEach(function(data) {
 
-if (window.location.href.indexOf(data.url) > -1) {          
+if (window.location.href.includes(data.url)) {          
 $('.sw_item_menu ').each(function(i, obj) {
     //test]
     console.log(obj)
