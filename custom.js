@@ -58,6 +58,20 @@ $(document).ready(function () {
 
 });
 
+if($('.sw_titulo_listagem').length > 0){
+
+    $('.sw_titulo_listagem').each(function() {
+        var endereco = $(this).find('.sw_txt_tooltip').attr('title')
+        var title = $(this).text()
+        
+       $(this).html(`
+       ${title} 
+       <p style="font-size: 13px;font-weight: 700;">${endereco}</p>`)
+      });
+
+}
+
+
 
 
 if (window.location.href.indexOf("https://www.lagoadaprata.mg.gov.br/portal/servicos/1014/iptu-alvara-iss-e-outros-servicos/") > -1) {          
