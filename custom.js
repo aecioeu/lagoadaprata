@@ -78,6 +78,8 @@ var urls = [{
           url : 'portal/servicos/1014/iptu-alvara-iss-e-outros-servicos/'
         },{
              url:'portal/servicos/1042/livro-eletronico/'
+        },{
+            url:'portal/servicos/1025/notas-fiscais-eletronicas/'
         }
 
     ]
