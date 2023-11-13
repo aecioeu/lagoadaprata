@@ -60,5 +60,15 @@ $(document).ready(function () {
 
 
 
+if (window.location.href.indexOf("https://www.lagoadaprata.mg.gov.br/portal/servicos/1014/iptu-alvara-iss-e-outros-servicos/") > -1) {          
+    
+$('.sw_menu_internas').addClass('show')
+
+
+ }
+
+
+
+
 
 });
