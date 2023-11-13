@@ -1,3 +1,28 @@
 #e_conteudo .e_conteudo_noticias .e_cont_noticia .e_img {
     min-height: auto !important;
 }
+
+a:link {
+    text-decoration: none !important;
+}
+
+.sw_item_menu{
+    background: #e1e3e5;
+    margin: 7px;
+    padding: 7px;
+    color: #56565b
+}
+
+.sw_item_menu .swfa {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 100%;
+    background: rgba(122,125,134,.095);
+    margin-right: 8px;
+    transform: rotate(-45deg);
+    flex-shrink: 0;
+    transition: .2s ease,color .1s,transform .5s cubic-bezier(.59,-.69,0,1.92);
+}
