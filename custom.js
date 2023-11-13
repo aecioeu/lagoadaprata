@@ -74,26 +74,28 @@ if($('.sw_titulo_listagem').length > 0){
 
 
 
-if (window.location.href.indexOf("https://www.lagoadaprata.mg.gov.br/portal/servicos/1014/iptu-alvara-iss-e-outros-servicos/") > -1) {          
-    
+var urls = [{ 
+          url : 'portal/servicos/1014/iptu-alvara-iss-e-outros-servicos/'
+        },{
+             url:'portal/servicos/1042/livro-eletronico/'
+        }
 
+    ]
 
+urls.forEach(function(data) {
 
-//remove srv_subtitulo_servico e sw_menu_internas
-
-
-
+if (window.location.href.indexOf(data.url) > -1) {          
 $('.sw_item_menu ').each(function(i, obj) {
     //test]
     console.log(obj)
     $('.srv_descricao_servico').append(obj)
     
 });
-
 $('.sw_menu_internas').remove()
 
+}
 
- }
+});
 
 
 

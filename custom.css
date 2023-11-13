@@ -2,15 +2,19 @@
     min-height: auto !important;
 }
 
-a:link {
-    text-decoration: none !important;
-}
+
 
 .sw_item_menu{
     background: #e1e3e5;
     margin: 7px;
     padding: 7px;
-    color: #56565b
+    color: #56565b !important;
+    border-radius: 26px;
+}
+
+.sw_item_menu a {
+    text-decoration: none !important;
+    color: #56565b !important;
 }
 
 .sw_item_menu .swfa {
