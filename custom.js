@@ -101,6 +101,9 @@ $('.sw_menu_internas').remove()
 });
 
 
+if (window.location.href.includes("https://www.lagoadaprata.mg.gov.br/portal/editais/0/1/560/")) {    
+$('.ed_arquivo_edital a').attr("href", '#')
+}
 
 
 
